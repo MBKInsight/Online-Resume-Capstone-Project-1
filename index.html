@@ -5,6 +5,277 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Resume</title>
   </head>
+  <style>
+    ```css
+/* =========================
+   General Styles
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f6f8;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* =========================
+   Header
+========================= */
+
+.header-section {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+/* =========================
+   Main Heading
+========================= */
+
+body > h1 {
+  font-size: 38px;
+  color: #1e293b;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   Sections
+========================= */
+
+section {
+  background-color: white;
+  padding: 30px;
+  margin: 25px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+section h2 {
+  color: #1e3a8a;
+  font-size: 25px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 8px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+/* =========================
+   Summary
+========================= */
+
+#summary {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.summary-container {
+  flex-shrink: 0;
+}
+
+.profile-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #2563eb;
+  display: block;
+}
+
+.summary-text {
+  flex: 1;
+}
+
+.summary-text p {
+  font-size: 17px;
+  color: #555;
+}
+
+/* =========================
+   Lists
+========================= */
+
+ul {
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+#education li,
+#workexperience li,
+#skills li,
+#awards\\&certifications li,
+#others li {
+  color: #444;
+}
+
+/* =========================
+   Work Experience
+========================= */
+
+#workexperience strong {
+  color: #1e3a8a;
+}
+
+.workexperience-text > ul:first-of-type {
+  margin-bottom: 20px;
+}
+
+/* =========================
+   Skills
+========================= */
+
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 30px;
+}
+
+#skills li {
+  background-color: #f1f5f9;
+  padding: 10px 15px;
+  border-left: 4px solid #2563eb;
+  list-style-position: inside;
+  border-radius: 5px;
+}
+
+/* =========================
+   Links
+========================= */
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #1e3a8a;
+  text-decoration: underline;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+  text-align: center;
+  margin-top: 35px;
+  padding: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px 15px;
+  }
+
+  body > h1 {
+    font-size: 30px;
+  }
+
+  #summary {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .summary-text {
+    width: 100%;
+  }
+
+  section {
+    padding: 22px;
+  }
+
+  #skills ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   Small Mobile Screens
+========================= */
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .header-section {
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  body > h1 {
+    font-size: 26px;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  section h2 {
+    font-size: 22px;
+  }
+
+  .summary-text p {
+    font-size: 15px;
+  }
+
+  .profile-image img {
+    width: 140px;
+    height: 140px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+}
+```
+
+  </style>
   <body>
     <header class="header-section">
       <h3 class="logo">RESUME</h3>
